@@ -2,7 +2,7 @@
 const egg = require('egg');
 module.exports = class AdminController extends egg.Controller {
   async login(ctx) {
-    await ctx.renderClient('admin/login/login.js', {});
+    await ctx.renderClient('admin/login/index.js', {}); 
   }
   async home(ctx) {
     const url = ctx.url.replace(/\/admin/, '');

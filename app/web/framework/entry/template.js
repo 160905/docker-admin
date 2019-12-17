@@ -1,4 +1,4 @@
-import Layout from 'component/layout/index';
+import Layout from '@/layout/index';
 import plugin from 'framework/plugin';
 
 export default function(Vue) {

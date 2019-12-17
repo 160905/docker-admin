@@ -215,7 +215,6 @@ exports.webpack = { // 默认是如下配置，可不配置
     │       │   │   ├── actions.js
     │       │   │   ├── getters.js
     │       │   │   ├── index.js
-    │       │   │   ├── mutation-type.js
     │       │   │   └── mutations.js
     │       │   └── store.js
     │       └── component                         // 公共业务组件, 比如loading, toast等, 遵循目录名, js文件名, scss文件名, vue文件名相同

@@ -1,15 +1,16 @@
 'use strict';
-// Webpack：https://www.yuque.com/easy-team/easywebpack
-// Egg Vue: https://www.yuque.com/easy-team/egg-vue 
+
+const path = require('path')
 module.exports = {
   entry: {
-    'index/index': 'app/web/page/index/index.vue',
-    'category/category': 'app/web/page/category/category.vue',
-    'about/about': 'app/web/page/about/about.vue',
-    'admin/home/home': 'app/web/page/admin/home/home.vue',
-    'admin/login/login': 'app/web/page/admin/login/login.vue',
+    'app/index': 'app/web/page/app/index.vue',
+    'admin/home/home': 'app/web/page/admin/home.vue',
+    'admin/login/index': 'app/web/page/admin/login/index.vue', 
   },
-  plugins: [
-    { imagemini: false }
-  ]
+  plugins: [{ imagemini: false }],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'app/web/')
+    }
+  }
 };
