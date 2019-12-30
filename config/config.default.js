@@ -82,8 +82,8 @@ module.exports = app => {
   };
 
   exports.swarm = {
-    address: 'http://39.105.171.62:2375', // docker swarm master 地址
-    ip: '39.105.171.62' // host ip for deploy project
+    address: 'http://192.168.133.145:2375', // docker swarm master 地址
+    ip: '192.168.133.145' // host ip for deploy project
   };
 
   exports.ssoAtome = {
